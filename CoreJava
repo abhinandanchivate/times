@@ -1,1 +1,64 @@
-<mxfile host="app.diagrams.net" modified="2022-01-12T05:35:39.552Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" version="16.2.4" etag="89ByQEISvc0N8Tu8Zz8C" type="github"><diagram id="GgEWabnWq92K-e_ERIAu">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-01-12T06:13:48.721Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="_SYaZiQ2saGWn8cG9T8_" version="16.2.4" type="github">
+  <diagram id="GgEWabnWq92K-e_ERIAu" name="Page-1">
+    <mxGraphModel dx="2272" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XR3bj5ickn6o_QrpV5K_-1" value="Layered Architecture" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XR3bj5ickn6o_QrpV5K_-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="XR3bj5ickn6o_QrpV5K_-2" target="XR3bj5ickn6o_QrpV5K_-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XR3bj5ickn6o_QrpV5K_-2" value="Main" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="260" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XR3bj5ickn6o_QrpV5K_-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="XR3bj5ickn6o_QrpV5K_-3" target="XR3bj5ickn6o_QrpV5K_-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XR3bj5ickn6o_QrpV5K_-3" value="Service" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="162.5" y="410" width="225" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XR3bj5ickn6o_QrpV5K_-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="XR3bj5ickn6o_QrpV5K_-5" target="XR3bj5ickn6o_QrpV5K_-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XR3bj5ickn6o_QrpV5K_-5" value="Repository" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="215" y="550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XR3bj5ickn6o_QrpV5K_-7" value="DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="240" y="680" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="XR3bj5ickn6o_QrpV5K_-9" value="to execute piece of code as per req." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XR3bj5ickn6o_QrpV5K_-10" value="Business Logical stuff ====&amp;gt; it may connect with other services/api to delegate the stuff." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="410" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XR3bj5ickn6o_QrpV5K_-11" value="will hold DB related code" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XR3bj5ickn6o_QrpV5K_-12" value="data" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XR3bj5ickn6o_QrpV5K_-13" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=south;notch=0;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="260" width="70" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="XR3bj5ickn6o_QrpV5K_-14" value="dto : data transport object" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="327.5" y="350" width="132.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XR3bj5ickn6o_QrpV5K_-15" value="can we declare a method?&amp;nbsp; ===&amp;gt; yes ==&amp;gt; serveral values" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="320" width="490" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="XR3bj5ickn6o_QrpV5K_-16" value="empId&lt;br&gt;empFN&lt;br&gt;empLN&lt;br&gt;salary&lt;br&gt;address&lt;br&gt;PAN&lt;br&gt;ADHAR" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="140" width="150" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="XR3bj5ickn6o_QrpV5K_-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="XR3bj5ickn6o_QrpV5K_-17" target="XR3bj5ickn6o_QrpV5K_-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XR3bj5ickn6o_QrpV5K_-17" value="Employee" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
