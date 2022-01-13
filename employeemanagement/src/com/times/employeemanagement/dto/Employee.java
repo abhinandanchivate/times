@@ -1,49 +1,33 @@
 package com.times.employeemanagement.dto;
 
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@ToString(callSuper = true , exclude = "address")
+@Setter
+@Getter
+@AllArgsConstructor
 public class Employee {
-	
-	private String empId;// camel naming convention.
+
+	public String empId;// camel naming convention.
 	private String empFirstName;
 	private String empLastName;
 	private float empSalary;
-	public String getEmpId() {
-		return empId;
+	@Setter(value = AccessLevel.NONE)
+	private String address;
+	
+	public float calculateSalary() {
+		
+		return empSalary + empSalary*10/100 + empSalary*5/100 + empSalary*15/100;
+		
 	}
-	public void setEmpId(String empId) {
-		this.empId = empId;
-	}
-	public String getEmpFirstName() {
-		return empFirstName;
-	}
-	public void setEmpFirstName(String empFirstName) {
-		this.empFirstName = empFirstName;
-	}
-	public String getEmpLastName() {
-		return empLastName;
-	}
-	public void setEmpLastName(String empLastName) {
-		this.empLastName = empLastName;
-	}
-	public float getEmpSalary() {
-		return empSalary;
-	}
-	public void setEmpSalary(float empSalary) {
-		this.empSalary = empSalary;
-	}
-	public String getAddress() {
-		return address;
-	}
+
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	private String address;
-	
-	// can we create the setter & getter methods?
-	// setter : to set the value to a specific field of the object.
-	// getter : to get the field value from the object.
-	
-	
-	
-	
 
 }
