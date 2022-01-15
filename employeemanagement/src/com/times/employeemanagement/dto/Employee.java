@@ -14,7 +14,7 @@ import lombok.ToString;
 @ToString(callSuper = true , exclude = "address")
 @EqualsAndHashCode
 
-public class Employee {
+public class Employee implements Comparable<Employee> {
 
 	public Employee(String empId, String empFirstName, String empLastName, float empSalary, String address) 
 			throws InvalidEmpIDException, InvalidSalaryException {
@@ -90,6 +90,12 @@ public class Employee {
 
 	public void setAddress(String address) {
 		this.address = address;
+	}
+
+	@Override
+	public int compareTo(Employee o) {
+		// TODO Auto-generated method stub
+		return this.empId.compareTo(o.getEmpId());
 	}
 
 }

@@ -2,8 +2,12 @@ package com.times.employeemanagement.repository;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 import com.times.employeemanagement.dto.Employee;
 
@@ -17,7 +21,7 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
 	// Employee employees[] = new Employee[10];
 //	Employee[] employees = new Employee[10];
 
-	List<Employee> employees = new LinkedList<>();
+	Set<Employee> employees = new TreeSet<>();
 	// this list will hold only employee types 
 	//List is an interface 
 	// interface : we can't create the objects but we can create the reference.
@@ -103,6 +107,8 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
 		// TODO Auto-generated method stub
 		
 		Employee[] employeesArr = new Employee[employees.size()];
+		List<Employee> employees = new ArrayList<>(this.employees);
+		// we passed set object to AL ===> Set ===> AL 
 		// return employees.toArray(employeesArr);
 		for (int i = 0; i < employeesArr.length; i++) {
 			employeesArr[i] = employees.get(i); 

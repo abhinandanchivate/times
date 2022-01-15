@@ -36,6 +36,7 @@ public class Main {
 		try {
 			employee = new Employee(empId, firstName, 
 					lastName, empSalary, address);
+			
 			System.out.println(employee);
 		} catch (InvalidEmpIDException | InvalidSalaryException e) {
 			// TODO Auto-generated catch block
@@ -43,6 +44,13 @@ public class Main {
 		}
 
 		String result = employeeService.addEmployee(employee);
+		try {
+			employeeService.addEmployee(new Employee("AB0001", firstName, 
+						lastName, empSalary, address));
+		} catch (InvalidEmpIDException | InvalidSalaryException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		Employee employee2 = employeeService.getEmployeeById("AB0001");
 		System.out.println(employee2);
 		System.out.println(result);
