@@ -52,12 +52,13 @@ public class EmployeeServiceImpl implements EmployeeService{
 	@Override
 	public void deleteEmployee(String empId) {
 		// TODO Auto-generated method stub
+		employeeRepository.deleteEmployee(empId);
 		
 	}
 
 	@Override
-	public List<Employee> getEmployees() {
+	public Employee[] getEmployees() {
 		// TODO Auto-generated method stub
-		return null;
+		return employeeRepository.getEmployees();
 	}
 }
